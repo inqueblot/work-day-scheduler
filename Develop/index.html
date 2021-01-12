@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
   <title>Work Day Scheduler</title>
 </head>
 
@@ -20,11 +24,56 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
+    <!-- timeBlocks go here -->
+
+    <div class="row time-block">
+      <div class="hour col-sm-1" value="9">9AM</div>
+      <textarea id="failure" class="col-sm-8" value="9"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1" value="10">10AM</div>
+      <textarea id="failure" class="col-sm-8" value="10"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">11AM</div>
+      <textarea id="failure" class="col-sm-8" value="11"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">12PM</div>
+      <textarea id="failure" class="col-sm-8" value="12"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">1PM</div>
+      <textarea id="failure" class="col-sm-8" value="13"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">2PM</div>
+      <textarea id="failure" class="col-sm-8" value="14"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">3PM</div>
+      <textarea id="failure" class="col-sm-8" value="15"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">4PM</div>
+      <textarea id="failure" class="col-sm-8" value="16"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+    <div class="row">
+      <div class="hour col-sm-1">5PM</div>
+      <textarea id="failure" class="col-sm-8" value="17"></textarea>
+      <button class="fas fa-save saveBtn col-sm-1"></button>
+    </div>
+
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="../Assets/script.js"></script>
 </body>
 

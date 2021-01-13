@@ -10,8 +10,6 @@ $(document).ready(function () {
         $(this).text(savedData);
 
         var timeTag = parseInt($(this).attr('value'));
-        console.log(timeTag)
-        console.log(hour)
 
         if (timeTag < hour) {
             $(this).addClass("past")
